@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "async-task-runner"
 version = "1.0.0"
-description = "基于 asyncio 的异步任务运行器"
+description = "An asyncio-based asynchronous task runner, ready to use out of the box."
 authors = ["huangyanming <13528685024@163.com>"]
 readme = "README.md"
 packages = [{ include = "asyncrunner" }]
