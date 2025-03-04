@@ -4,6 +4,24 @@
 
 **asyncrunner** is an asyncio-based asynchronous task runner designed to help you easily implement concurrent task management. It supports task timeout control, concurrency limits, and callback functions after task completion, meeting most asynchronous task scheduling needs.
 
+## Installation
+
+You can install the package via pip:
+
+```bash
+pip install async-task-runner
+```
+
+Or build and install using [Poetry](https://python-poetry.org/):
+
+```bash
+# Build package (in project root directory)
+poetry build
+
+# Install the generated package (assuming the generated file is async-task-runner-1.0.0-py3-none-any.whl)
+pip install dist/async-task-runner-1.0.0-py3-none-any.whl
+```
+
 ## Features
 
 - **High-performance Async Scheduling**: Implemented based on asyncio, fully utilizing Python's asynchronous features
@@ -13,18 +31,6 @@
 - **Flexible Task Scheduling Interface**:
     - `run_tasks`: Schedule tasks through a list of task dictionaries, each task dictionary should contain `target` (task coroutine function) and other parameters
     - `run_tasks_by_list`: Schedule tasks through parameter lists, suitable for cases where parameters are provided in list/tuple or dictionary form
-
-## Installation
-
-Build and install using [Poetry](https://python-poetry.org/):
-
-```bash
-# Build package (in project root directory)
-poetry build
-
-# Install the generated package (assuming the generated file is asyncrunner-1.0.0-py3-none-any.whl)
-pip install dist/asyncrunner-1.0.0-py3-none-any.whl
-```
 
 ## Usage
 

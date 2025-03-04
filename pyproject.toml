@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "asyncrunner"
+name = "async-task-runner"
 version = "1.0.0"
 description = "基于 asyncio 的异步任务运行器"
 authors = ["huangyanming <13528685024@163.com>"]
@@ -10,5 +10,24 @@ packages = [{ include = "asyncrunner" }]
 python = ">=3.9"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "async-task-runner"
+version = "1.0.0"
+authors = [
+  { name="huangyanming", email="13528685024@163.com" },
+]
+description = "An asyncio-based asynchronous task runner"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/869413421/asyncrunner"
+"Bug Tracker" = "https://github.com/869413421/asyncrunner/issues"
